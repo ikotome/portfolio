@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me </title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style type="text/css">
+    /* ベース */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+    a {
+      color: #00b4d8;
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    /* ナビバー */
+    .navbar {
+      width: 100vw;
+      box-sizing: border-box;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #121212;
+      color: #fff;
+      font-family: "Segoe UI", sans-serif;
+      border-bottom: 1px solid hsl(240, 6%, 15%);
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .blue {
+      color: #00b4d8;
+    }
+    nav ul.nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul.nav-links li a {
+      color: #aaa;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav ul.nav-links li a:hover,
+    nav ul.nav-links li a:focus {
+      color: #a259ff;
+    }
+
+    /* ヘッダーセクション */
+    header#page-header {
+      text-align: center;
+      padding: 3rem 1rem 1rem 1rem;
+    }
+    header#page-header h1 {
+      font-size: 2.75rem;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+    header#page-header p.tagline {
+      font-size: 1.2rem;
+      color: #ddd;
+      font-weight: 500;
+      font-style: italic;
+      margin-top: 0;
+    }
+
+    /* コンテナ */
+    .container-main {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    /* プロフィールカード */
+    .card-custom {
+      background-color: #161b22;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      color: #ddd;
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
+    }
+    .card-custom:hover,
+    .card-custom:focus-within {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(162, 89, 255, 0.6);
+    }
+    .card-title-custom {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #a259ff;
+      border-bottom: 3px solid #a259ff;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    /* アイコンサイズ */
+    .card-title-custom span.icon {
+      font-size: 1.5rem;
+    }
+
+    /* リスト */
+    ul.profile-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+    ul.profile-list li {
+      margin-bottom: 0.6rem;
+    }
+    ul.profile-list strong {
+      color: #00b4d8;
+    }
+
+    /* フッター */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* SNSアイコン */
+    .profile-icon {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        padding: 4px;
+        background: linear-gradient(to right, #a259ff, #00b4d8);
+        box-sizing: border-box;
+        margin: 0 auto 1rem auto;
+        position: relative;
+    }
+
+    .profile-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        display: block;
+        background-color: #121212;
+        padding: 4px;
+        box-sizing: border-box;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <header class="navbar" role="banner">
+    <div class="logo" id="site-logo">ikoto.<span class="blue">me</span></div>
+    <nav role="navigation" aria-label="メインナビゲーション">
+      <ul class="nav-links">
+        <li><a href="index.html" tabindex="0">Home</a></li>
+        <li><a href="sub1.html" tabindex="0">About</a></li>
+        <li><a href="#" tabindex="0">Skills</a></li>
+        <li><a href="#" tabindex="0">Hobby</a></li>
+        <li><a href="#" tabindex="0">Hometown</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header id="page-header" role="banner">
+    <h1>About Me</h1>
+    <p class="tagline">自分の“あったらいいな”が、誰かの便利になるかもしれない。</p>
+    <div class="profile-icon">
+        <img src="./Photos Library.png" alt="プロフィール画像" />
+    </div>
+  </header>
+
+
+
+  <main class="container-main" role="main">
+    <div class="row">
+      <div class="col-md-4">
+        <section class="card-custom" tabindex="0" aria-labelledby="profile-title">
+          <h2 class="card-title-custom" id="profile-title">
+            <span class="icon" aria-hidden="true">👤</span> プロフィール
+          </h2>
+          <ul class="profile-list text-start">
+            <li><strong>名前：</strong>井上 琴水</li>
+            <li><strong>大学：</strong>京都産業大学 情報理工学部</li>
+            <li><strong>学年：</strong>2年生</li>
+            <li><strong>趣味：</strong>ものづくり、ゲーム、映画鑑賞</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="col-md-4">
+        <section class="card-custom" tabindex="0" aria-labelledby="skills-title">
+          <h2 class="card-title-custom" id="skills-title">
+            <span class="icon" aria-hidden="true">💻</span> スキル
+          </h2>
+          <ul class="profile-list text-start">
+            <li>Ruby on Rails / C#(.Net)</li>
+            <li>React / Next.js</li>
+            <li>Python / C</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="col-md-4">
+        <section class="card-custom" tabindex="0" aria-labelledby="hobby-title">
+          <h2 class="card-title-custom" id="hobby-title">
+            <span class="icon" aria-hidden="true">🎮</span> 趣味・関心
+          </h2>
+          <ul class="profile-list text-start">
+            <li>自作キーボード</li>
+            <li>アイデア出し</li>
+            <li>ゲーム・映画</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 ikoto.me. <a href="index.html">トップページへ戻る</a></p>
+  </footer>
+</body>
+</html>
