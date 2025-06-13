@@ -20,3 +20,10 @@
 #font01{
     font-family: 'Amatic SC', cursive;
 }
+
+.fixed-img {
+    height: 200px; /* 画像の高さをお好みの値で固定 */
+    object-fit: cover; /* 画像がカードの枠に収まるようにトリミング */
+    width: 100%; /* 幅を親要素に合わせる */
+}
+  
